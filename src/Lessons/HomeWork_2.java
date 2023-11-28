@@ -40,9 +40,15 @@ public class HomeWork_2 {
         // Print the result array to the console.
         int[] array2 ={123,4123,123,523,123,12351,123,132,2332,523523,411431,124};
         System.out.println("array Square:");
-        for (int number2 : array2){
+        for (int number2 : array2) {
             System.out.println(Math.sqrt(number2) + " ");
         }
+            //boolean
+
+            int min = (a<b) ? a : b;
+            System.out.println("min :"+min);
+
+            //Create a program that calculates the factorial of an integer value n
     }
 
 
