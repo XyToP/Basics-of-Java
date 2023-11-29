@@ -4,6 +4,11 @@ package Lessons;
 import java.util.Random;
 
 public class HomeWork_2 {
+    static int test (int testval, int target){
+        if (testval>target) return + 1;
+        if (testval<target) return - 1;
+        return 0;
+    }
     public static void main(String[] args) {
         int a=3;
         int b=2;
@@ -47,8 +52,38 @@ public class HomeWork_2 {
 
             int min = (a<b) ? a : b;
             System.out.println("min :"+min);
-
+            //return
+        System.out.println(test(5,5));
+        //break and continue
+        for (int i=0; i < 100; i++){
+            if (i == 74) break;
+            if (i % 9 != 0) continue;
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        //SWITCH
+        char Switch='B';
+        switch(Switch){
+            case 'A':
+                System.out.println("A"); break;
+            case 'B':
+                System.out.println("B"); break;
+            case 'C':
+                System.out.println("C"); break;
+            default:
+                System.out.println("Default");
+        }
             //Create a program that calculates the factorial of an integer value n
+        int число = 5;
+
+        int fact=1;
+
+        for (int i = 1; i <=число; i++){
+            fact=i*fact;
+            System.out.println("factorial of "+число+"="+fact);
+        }
+
+        //5-1
     }
 
 
