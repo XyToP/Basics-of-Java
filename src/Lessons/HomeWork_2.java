@@ -83,7 +83,14 @@ public class HomeWork_2 {
             System.out.println("factorial of "+число+"="+fact);
         }
 
-        //5-1
+        //7
+        int[] array10 = {10, 2, 2, 2, 2, 2, 2, 2, 2, 10};
+        int sum=0;
+        for (int i=1; i<array10.length-1; i++){
+             sum+=array10[i];
+        }
+        System.out.println("summa= " + sum);
+
     }
 
 
