@@ -2,6 +2,7 @@ package Lessons;
 //import java.math.*;
 
 import java.util.Random;
+import java.util.Arrays;
 
 public class HomeWork_2 {
     static int test (int testval, int target){
@@ -82,7 +83,6 @@ public class HomeWork_2 {
             fact=i*fact;
             System.out.println("factorial of "+число+"="+fact);
         }
-
         //7
         int[] array10 = {10, 2, 2, 2, 2, 2, 2, 2, 2, 10};
         int sum=0;
@@ -90,7 +90,24 @@ public class HomeWork_2 {
              sum+=array10[i];
         }
         System.out.println("summa= " + sum);
+        //8
 
+        for (int i=1; i<=100; i++){
+            if ((i%3==0 || i%5==0) && i%2!=0){
+                System.out.println(i);
+            }
+        }
+        //9
+        int[] massive=new int[10];
+        Random random2 = new Random();
+        for(int i=1; i<10; i++){
+            massive[i] = random2.nextInt(100);
+            //
+        }
+        System.out.println("random massive ");
+        Arrays.sort(massive);
+        for(int massiveP:massive){
+        System.out.println(massiveP);}
     }
 
 
