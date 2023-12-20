@@ -1,5 +1,8 @@
 package Lessons;
 
+import java.util.Arrays;
+import java.util.Locale;
+
 public class HomeWork_3 {
     public static void main(String[] args) {
 
@@ -44,9 +47,10 @@ public class HomeWork_3 {
         String word1 = "The End";
         String word2="End The";
         String the = "The";
+if (word1.startsWith(the)){
 
-
-        System.out.println(word1.startsWith(the));
+        System.out.println("yes start the");}
+else {System.out.println("not start the");}
 //        Given a string "ABCDEFGHIJK". You need to make this string lowercased and remove all vowels.
         String string5 ="ABCDEFGHIJK";
 String lowercase = string5.toLowerCase();
@@ -75,6 +79,37 @@ String novowels = lowercase.replaceAll("[a,e,i]","");
 
         // Print the resulting string
         System.out.println("Resulting String: " + c);
+
+//7. Given a user's email address: john_smith@example.com. Create two strings "login" and "domain"
+// which will be substrings of full email address.
+//   The First Name and Last Name of the user should be in the following format: "Name Surname".
+String email = "john_smith@example.com";
+int ddd = email.indexOf("_");
+int aaa = email.indexOf("@");
+String Name = email.substring(0,ddd);
+String Surname = email.substring(ddd+1,aaa);
+        System.out.println(email.substring(0,1).toUpperCase(Locale.ROOT)+email.substring(1,ddd));
+        System.out.println(email.substring(ddd+1,ddd+2).toUpperCase(Locale.ROOT)+email.substring(ddd+2,aaa));
+
+        //8. Given a string "Den, John, Will, Kate, Adam, Robin". Print all the names from the following string each from a new line.
+        //   Example:
+        //   Den
+        //   John
+        //   Will
+        //   Kate
+
+        String names = "Den, John, Will, Kate, Adam, Robin";
+        String[] namearray = names.split(", ");
+
+        for (String name : namearray) {
+            System.out.println(name);
+        }
+//9. Given some random string s. Verify if that string ends with ".".
+// If so, leave this string as is. If not - add it. Test strings create on your own.
+    String random = "1231313def3ff";
+        if (random.endsWith(".")){
+            System.out.println("yes" + random +" end with .");}
+        else {System.out.println("not start the"+random+".");}
 
 
 
